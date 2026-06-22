@@ -1,0 +1,91 @@
+main h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+.pedido{
+    width: 100%;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 8px;
+
+    margin-bottom: 1.5em;
+}
+
+.pedido-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 1em 2em;
+    border-radius: 8px 8px 0 0;
+    background-color: var(--tertiary-color);
+}
+
+.pedido-info h3{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.pedido-info > div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.pedido-info p,
+.item-info p{
+    margin: 0;
+    line-height: 1.4;
+
+    font-size: 0.9em;
+}
+
+.item-info h4{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0 0 0.2em;
+}
+
+.pedido-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.pedido-itens .item{
+    display: flex;
+    gap: 0.5em;
+}
+
+.pedido-itens img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1em;
+}
+
+.item-info h4{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.pedido-acao{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.btn-pedido{
+    padding: 0.5em 1em;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-pedido:hover{
+    background-color: var(--secondary-color);
+}
