@@ -1,0 +1,119 @@
+.ajuda-topo{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.ajuda-topo p{
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.ajuda-topo h1{
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+.busca-ajuda{
+    width: 100%;
+    max-width: 600px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.ajuda-card{
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.ajuda-card h3{
+    margin-bottom: 20px;
+}
+
+/* FAQ */
+
+.faq-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    border-radius: 10px;
+    background: #f7f7f7;
+    text-decoration: none;
+    color: #222;
+    transition: .3s;
+}
+
+.faq-card:hover{
+    background: #eeeeee;
+    transform: translateX(5px);
+}
+
+.faq-card span{
+    font-size: 24px;
+}
+
+.faq-card p{
+    flex: 1;
+    margin: 0;
+    font-weight: 600;
+}
+
+.faq-card strong{
+    font-size: 24px;
+}
+
+/* Transportadoras */
+
+.transportadoras-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 15px;
+}
+
+.transportadora-card{
+    background: #f7f7f7;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.transportadora-card h4{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+/* Status */
+
+.status-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.status-verde{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #28a745;
+}
+
+/* Suporte */
+
+.suporte-final{
+    text-align: center;
+}
+
+.suporte-final p{
+    margin-bottom: 10px;
+}
