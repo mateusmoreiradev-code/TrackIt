@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrackIt - Detalhes do Pedido</title>
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/detalhesPedido.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" id="logo">TrackIt</a>
+
+    <ul class="menu">
+      <li><a href="index.html">Meus Pedidos</a></li>
+      <li><a href="rastrearPedidos.html">Rastrear Pedido</a></li>
+      <li><a href="notificacoes.html">Notificações</a></li>
+      <li><a href="ajuda.html">Ajuda</a></li>
+    </ul>
+
+    <a href="perfil.html" id="perfil">
+      <img src="imgs/perfil.jpg" alt="Perfil">Olá, Garfield!
+    </a>
+  </nav>
+</header>
+
+<main class="detalhes-main">
+
+    <a style="color:white" !important href="index.html" class="btn-voltar">
+        ← Voltar para Meus Pedidos
+    </a>
+
+  <section class="titulo-pedido">
+    <h1 style="padding: 25px;">Detalhes do pedido - #1247856</h1>
+     <div class="pedido-itens">
+                    <div class="item">
+                        <img src="imgs/lotm.jpg" alt="Novel Lord of Mysteries">
+                        <div class="item-info">
+                            <h4>Lord of Mysteries Novel V01 The Clown, Part I</h4>
+                            <p>Quantidade: 2</p>
+                            <p>R$211,92</p>
+                        </div>
+                    </div>
+  </section>
+
+  <section class="cards-superiores">
+
+    <div class="card-previsao">
+      <p>Previsão de entrega</p>
+      <h2>30 de junho</h2>
+      <h3>Terça-feira</h3>
+      <small>A previsão pode mudar por fatores como clima e volume de entregas.</small>
+    </div>
+
+    <div class="card-info">
+      <h3>Transportadora</h3>
+
+      <div class="transportadora-box">
+        <div class="icone">🚚</div>
+        <div>
+          <h4>Loggi Express</h4>
+          <p>Serviço: Standard</p>
+        </div>
+      </div>
+
+      <div class="codigo-box">
+        <p>Código de rastreio</p>
+        <strong>LX987654321BR</strong>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="card-contato">
+    <h2>Contato da transportadora</h2>
+
+    <div class="linha-contato">
+      <div class="icone">☎</div>
+      <div>
+        <strong>0800 123 4567</strong>
+        <p>Atendimento 24h · gratuito</p>
+      </div>
+    </div>
+
+    <div class="linha-contato">
+      <div class="icone">✉</div>
+      <div>
+        <strong>atendimento@loggi.com</strong>
+        <p>Resposta em até 24h</p>
+      </div>
+    </div>
+
+    <div class="linha-contato">
+      <div class="icone">🌐</div>
+      <div>
+        <strong>www.loggi.com</strong>
+        <p>Site da transportadora</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="linha-contato">
+      <div class="icone">📍</div>
+      <div>
+        <p>Endereço de entrega</p>
+        <strong>Rua das Flores, 123</strong><br>
+        <strong>Vila Madalena · São Paulo / SP</strong>
+        <p>CEP 05420-010</p>
+      </div>
+    </div>
+  </section>
+
+ <section class="card-cancelamento">
+
+    <h2>⚠ Cancelar Pedido</h2>
+
+    <p>
+        Caso você não deseje mais receber este produto,
+        é possível solicitar o cancelamento antes que
+        ele saia para entrega.
+    </p>
+
+    <div class="aviso-cancelamento">
+
+        <h4>Importante</h4>
+
+        <ul>
+            <li>O pedido não poderá ser recuperado após o cancelamento.</li>
+            <li>O reembolso será realizado conforme a forma de pagamento.</li>
+            <li>O cancelamento só está disponível enquanto o pedido estiver em preparação ou em trânsito.</li>
+        </ul>
+
+    </div>
+
+    <button id="btnCancelar" class="btn-cancelar" onclick="abrirModalCancelar()">
+        Cancelar pedido
+    </button>
+
+    <p id="mensagemCancelamento"></p>
+
+    <div id="modalCancelar" class="modal-fundo">
+    <div class="modal-caixa">
+         <button class="fechar-modal"
+            onclick="fecharModalCancelar()">
+        &times;
+    </button>
+        <h2>Cancelar pedido?</h2>
+
+        <p>Tem certeza que deseja cancelar este pedido?</p>
+        <small>Essa ação não poderá ser desfeita.</small>
+
+        <div class="modal-botoes">
+
+             <button class="btn-modal-manter" onclick="fecharModalCancelar()">
+                 Manter Pedido
+            </button>
+
+            <button class="btn-modal-cancelar" onclick="cancelarPedido()">
+                 Sim, cancelar
+            </button>
+
+        </div>
+    </div>
+</div>
+<script>
+function abrirModalCancelar(){
+    document.getElementById("modalCancelar").style.display = "flex";
+}
+
+function fecharModalCancelar(){
+    document.getElementById("modalCancelar").style.display = "none";
+}
+
+function cancelarPedido(){
+    document.getElementById("mensagemCancelamento").innerHTML =
+    "✅ Pedido cancelado com sucesso.";
+
+    document.getElementById("btnCancelar").disabled = true;
+    document.getElementById("btnCancelar").innerHTML = "Pedido cancelado";
+
+    fecharModalCancelar();
+}
+</script>
+</section>
+</main>
+    <footer>
+        <div class="transportadora">
+            <h3>Transportadoras parceiras</h3>
+            <ul>
+                <li><a href="#">Entrega Express</a></li>
+                <li><a href="#">Loggi Express</a></li>
+                <li><a href="#">MotoMoto</a></li>
+                <li><a href="#">Transportes Express</a></li>
+            </ul>
+            
+        </div>
+        <div class="duvidas-frequentes">
+            <h3>Dúvidas Frequentes</h3>
+            <ul>
+                <li><a href="#">Dúvidas frequentes</a></li>
+                <li><a href="#">Como funciona a entrega?</a></li>
+                <li><a href="#">Quais são os prazos de entrega?</a></li>
+                <li><a href="#">Cancelar ou alterar pedido</a></li>
+            </ul>
+        </div>
+        <div class="contato">
+            <h3>Fale com o suporte</h3>
+            <p>Atendimento todos os dias<br>das 8h às 20h</p>
+
+            <button class="btn-contato">Iniciar atendimento</button>
+        </div>
+    </footer>
+</body>
+</html>
