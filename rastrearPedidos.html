@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rastrear Pedido</title>   
 
+     <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,5 +27,209 @@
             <a href="perfil.html" id="perfil"><img src="imgs/perfil.jpg" alt="Perfil">Olá, Garfield!</a>
         </nav>
     </header>
+
+    <main>
+        <div class="rastreio">
+            <div class="rastreio-header">
+                <div>
+                    <h3>Status de entrega</h3>
+                    <p>Previsão de entrega: <strong>28 de Junho, 2026</strong></p>
+                </div>
+
+                <h3 id="ultima-att">Atualizado à 4h37</h3>
+            </div>
+
+            <div class="rastreio-stts-atual">
+                <img src="./imgs/icone-transporte.svg">
+
+                <div>
+                    <h3>Em transferência operacional</h3>
+                    <p>Seu pedido está em tranferência entre unidades logísticas.</p>
+                </div>
+            </div>
+
+            <div class="rastreio-linha-do-tempo">
+                <div class="fase completa">
+                    <div class="fase-icone"><img src="./imgs/completo.svg"></div>
+                    <div class="fase-status">
+                        <h3>Pedido Realizado</h3>
+                        <p>20 Jun, 10h30</p>
+                    </div>
+                </div>
+
+                <div class="fase completa">
+                    <div class="fase-icone"><img src="./imgs/completo.svg"></div>
+                    <div class="fase-status">
+                        <h3>Pagamento Aprovado</h3>
+                        <p>20 Jun, 10h31</p>
+                    </div>
+                </div>
+
+                <div class="fase completa">
+                    <div class="fase-icone"><img src="./imgs/completo.svg"></div>
+                    <div class="fase-status">
+                        <h3>Pedido Coletado</h3>
+                        <p>20 Jun, 18h30</p>
+                    </div>
+                </div>
+
+                <div class="fase ativa">
+                    <div class="fase-icone"><img src="./imgs/aviao.svg"></div>
+                    <div class="fase-status">
+                        <h3>Em Trânsito</h3>
+                        <p>21 Jun, 04h34</p>
+                    </div>
+                </div>
+
+                
+                <div class="fase">
+                    <div class="fase-icone"><img src="./imgs/caminhao.svg"></div>
+                    <div class="fase-status">
+                        <h3>Saiu para entrega</h3>
+                        <p>Aguardando atualização</p>
+                    </div>
+                </div>
+
+                <div class="fase">
+                    <div class="fase-icone">
+                        <img src="./imgs/home.svg">
+                    </div>
+                    <div class="fase-status">
+                        <h3>Pedido Entregue</h3>
+                        <p>Aguardando atualização</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rastreio-detalhado-container">
+                <h3>Histórico de movimentações</h3>
+ 
+                <div class="rastreio-detalhado">
+                    <div class="linha-vertical-container">
+                        <div class="linha-conectora-inicio"></div>
+                        <div class="icone-rastreio-detalhado">
+                            <img src="./imgs/caminhao.svg">
+                        </div>
+                        <div class="linha-conectora"></div>
+                    </div>
+
+                    <div class="data-horario">
+                        <p>21/06/2026</p>
+                        <p>04h34</p>
+                    </div>
+
+                    <div class="descricao-acao">
+                        <h3>Em transferência operacional</h3>
+                        <p>Carga transferida da unidade de tratamento internacional para o centro de distribuição regional.</p>
+                    </div>
+
+                    <div class="local-encomenda">
+                        <p>Centro de Distribuição - São Paulo/SP</p>
+                    </div>            
+                </div>
+                
+                <div class="rastreio-detalhado">
+                    <div class="linha-vertical-container">
+                        <div class="linha-conectora"></div>
+                        <div class="icone-rastreio-detalhado">
+                            <img src="./imgs/completo.svg">
+                        </div>
+                        <div class="linha-conectora"></div>
+                    </div>
+
+                    <div class="data-horario">
+                        <p>21/06/2026</p>
+                        <p>02h20</p>
+                    </div>
+
+                    <div class="descricao-acao">
+                        <h3>Fiscalização aduaneira concluída</h3>
+                        <p>A importação foi autorizada pelas autoridades aduaneiras e o objeto será encaminhado para a transportadora.</p>
+                    </div>
+
+                    <div class="local-encomenda">
+                        <p>Unidade de Tratamento - Curitiba/PR</p>
+                    </div>            
+                </div>
+
+                <div class="rastreio-detalhado">
+                    <div class="linha-vertical-container">
+                        <div class="linha-conectora"></div>
+                        <div class="icone-rastreio-detalhado">
+                            <img src="./imgs/aviao.svg">
+                        </div>
+                        <div class="linha-conectora"></div>
+                    </div>
+
+                    <div class="data-horario">
+                        <p>21/06/2026</p>
+                        <p>00h15</p>
+                    </div>
+
+                    <div class="descricao-acao">
+                        <h3>Chegou ao país de destino</h3>
+                        <p>O pacote chegou ao centro internacional e foi encaminhado para a fiscalização aduaneira.</p>
+                    </div>
+
+                    <div class="local-encomenda">
+                        <p>Centro Logístico Internacional - Curitiba/PR</p>
+                    </div>            
+                </div>
+
+                <div class="rastreio-detalhado">
+                    <div class="linha-vertical-container">
+                        <div class="linha-conectora"></div>
+                        <div class="icone-rastreio-detalhado">
+                            <img src="./imgs/caminhao.svg">
+                        </div>
+                        <div class="linha-conectora-fim"></div>
+                    </div>
+
+                    <div class="data-horario">
+                        <p>20/06/2026</p>
+                        <p>19h30</p>
+                    </div>
+
+                    <div class="descricao-acao">
+                        <h3>Em transferência operacional</h3>
+                        <p>O pedido saiu do aeroporto no país origem.</p>
+                    </div>
+
+                    <div class="local-encomenda">
+                        <p>Centro Logístico Internacional - Shenzhen</p>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Rodapé-->
+    <footer>
+        <div class="transportadora">
+            <h3>Transportadoras parceiras</h3>
+            <ul>
+                <li><a href="#">Entrega Express</a></li>
+                <li><a href="#">Loggi Express</a></li>
+                <li><a href="#">MotoMoto</a></li>
+                <li><a href="#">Transportes Express</a></li>
+            </ul>
+            
+        </div>
+        <div class="duvidas-frequentes">
+            <h3>Dúvidas Frequentes</h3>
+            <ul>
+                <li><a href="#">Dúvidas frequentes</a></li>
+                <li><a href="#">Como funciona a entrega?</a></li>
+                <li><a href="#">Quais são os prazos de entrega?</a></li>
+                <li><a href="#">Cancelar ou alterar pedido</a></li>
+            </ul>
+        </div>
+        <div class="contato">
+            <h3>Fale com o suporte</h3>
+            <p>Atendimento todos os dias<br>das 8h às 20h</p>
+
+            <button class="btn-contato">Iniciar atendimento</button>
+        </div>
+    </footer>
 </body>
 </html>

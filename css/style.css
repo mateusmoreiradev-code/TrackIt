@@ -1,6 +1,7 @@
 @import url("./header.css");
 @import url("./footer.css");
 @import url("./meusPedidos.css");
+@import url("./rastrearPedidos.css");
 
 :root{
     --text-color: #0D0D0D;
