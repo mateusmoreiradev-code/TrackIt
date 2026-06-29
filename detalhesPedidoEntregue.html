@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackIt - Detalhes do Pedido</title>
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detalhesPedido.css">
+</head>
+
+<body>
+    <!--Barra de navegação-->
+    <header>
+        <nav>
+            <a href="index.html" id="logo">TrackIt</a>
+            <ul class="menu">
+                <li><a href="index.html">Meus Pedidos</a></li>
+                <li><a href="rastrearPedidos.html">Rastrear Pedido</a></li>
+                <li><a href="notificacoes.html">Notificações</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+            <a href="perfil.html" id="perfil"><img src="imgs/perfil.jpg" alt="Perfil">Olá, Garfield!</a>
+        </nav>
+    </header>
+
+    <main class="detalhes-main">
+
+    <a style="color:white" !important href="index.html" class="btn-voltar">
+        ← Voltar para Meus Pedidos
+    </a>
+
+  <section class="titulo-pedido">
+    <h1 style="padding: 25px;">Detalhes do pedido - #1247856</h1>
+     <div class="pedido-itens">
+                    <div class="item">
+                        <img src="imgs/iniciacao.jpg" alt="HQ Iniciação">
+                        <div class="item-info">
+                            <h4>Ordem Paranormal Vol. 1: Iniciação</h4>
+                            <p>Quantidade: 1</p>
+                            <p>R$97,40</p>
+                        </div>
+                    </div>
+  </section>
+
+    <section class="cards-superiores">
+
+        <div class="card-entregue">
+            <p>Pedido entregue em</p>
+            <h2>22 de abril</h2>
+            <h3>Quarta-feira</h3>
+            <small>Entrega realizada com sucesso no endereço informado.</small>
+        </div>
+
+        <div class="card-info">
+            <h3>Transportadora</h3>
+
+            <div class="transportadora-box">
+                <div class="icone">🚚</div>
+                <div>
+                    <h4>Entrega Express</h4>
+                    <p>Serviço: Standard</p>
+                </div>
+            </div>
+
+            <div class="codigo-box">
+                <p>Código de rastreio</p>
+                <strong>EX123456789BR</strong>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="card-contato">
+        <h2>Informações da entrega</h2>
+
+        <div class="linha-contato">
+            <div class="icone">✅</div>
+            <div>
+                <strong>Pedido entregue ao destinatário</strong>
+                <p>Produto recebido em 22/04/2026 às 15:42.</p>
+            </div>
+        </div>
+
+        <div class="linha-contato">
+            <div class="icone">📍</div>
+            <div>
+                <p>Endereço de entrega</p>
+                <strong>Rua das Flores, 123</strong><br>
+                <strong>Vila Madalena · São Paulo / SP</strong>
+                <p>CEP 05420-010</p>
+            </div>
+        </div>
+
+        <div class="linha-contato">
+            <div class="icone">📦</div>
+            <div>
+                <strong>Produto entregue sem ocorrências</strong>
+                <p>Nenhum problema foi registrado pela transportadora.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="card-acoes-entregue">
+        <h2>O que deseja fazer agora?</h2>
+
+        <div class="acoes-entregue">
+            <a href="#" class="btn-comprar-novamente">Comprar novamente</a>
+            <a href="#" class="btn-avaliar">Avaliar produto</a>
+            <a href="ajuda.html" class="btn-suporte">Falar com suporte</a>
+        </div>
+    </section>
+</main>
+    <footer>
+        <div class="transportadora">
+            <h3>Transportadoras parceiras</h3>
+            <ul>
+                <li><a href="#">Entrega Express</a></li>
+                <li><a href="#">Loggi Express</a></li>
+                <li><a href="#">MotoMoto</a></li>
+                <li><a href="#">Transportes Express</a></li>
+            </ul>
+            
+        </div>
+        <div class="duvidas-frequentes">
+            <h3>Dúvidas Frequentes</h3>
+            <ul>
+                <li><a href="#">Dúvidas frequentes</a></li>
+                <li><a href="#">Como funciona a entrega?</a></li>
+                <li><a href="#">Quais são os prazos de entrega?</a></li>
+                <li><a href="#">Cancelar ou alterar pedido</a></li>
+            </ul>
+        </div>
+        <div class="contato">
+            <h3>Fale com o suporte</h3>
+            <p>Atendimento todos os dias<br>das 8h às 20h</p>
+
+            <button class="btn-contato">Iniciar atendimento</button>
+        </div>
+    </footer>
+</body>
+</html>

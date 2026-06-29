@@ -1,0 +1,314 @@
+.detalhes-main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.titulo-pedido h1 {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.titulo-pedido p {
+  color: #666;
+  margin-top: 5px;
+}
+
+.cards-superiores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+.card-previsao {
+  background: var(--primary-color);
+  color: white;
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.card-previsao h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.card-previsao h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.card-info,
+.card-contato,
+.card-cancelamento {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+}
+
+.transportadora-box,
+.linha-contato {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.icone {
+  background: #e9eefb;
+  color: var(--primary-color);
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.codigo-box {
+  background: #e5e7eb;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.linha-contato p,
+.codigo-box p {
+  margin: 0;
+  color: #666;
+}
+
+.card-cancelamento {
+  margin-top: 25px;
+}
+
+.card-cancelamento button {
+  margin-top: 15px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #d93025;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card-cancelamento button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+#mensagemCancelamento {
+  margin-top: 15px;
+  color: #198754;
+  font-weight: 600;
+}
+
+.btn-voltar{
+    padding: 0.5em 1em;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-voltar:hover{
+    background-color: rgb(82, 82, 82);
+}
+
+.card-cancelamento{
+    margin-top: 30px;
+    padding: 25px;
+    background: #fff5f5;
+    border: 1px solid #f5b5b5;
+    border-radius: 12px;
+}
+
+.card-cancelamento h2{
+    color: #c62828;
+    margin-bottom: 15px;
+}
+
+.aviso-cancelamento{
+    background: #ffffff;
+    border-left: 5px solid #d93025;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.aviso-cancelamento h4{
+    margin-bottom:10px;
+    color:#d93025;
+}
+
+.aviso-cancelamento ul{
+    margin-left:20px;
+}
+
+.aviso-cancelamento li{
+    margin-bottom:8px;
+}
+
+.btn-cancelar{
+    padding:12px 22px;
+    background:#d93025;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-cancelar:hover{
+    background:#b71c1c;
+}
+
+.modal-fundo{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-caixa{
+    width: 360px;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,.2);
+    position:relative;
+}
+
+.modal-caixa h2{
+    color: #d93025;
+    margin-bottom: 10px;
+}
+
+.modal-caixa small{
+    color: #666;
+}
+
+.modal-botoes{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.modal-botoes button{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-modal-voltar{
+    background: #ddd;
+}
+
+.btn-modal-cancelar{
+    background: #d93025;
+    color: white;
+}
+
+#mensagemCancelamento{
+    margin-top: 15px;
+    color: #198754;
+    font-weight: 600;
+}
+
+
+.btn-modal-manter{
+    background-color: #d9d9d9 !important;
+    color: #333 !important;
+}
+
+.btn-modal-manter:hover{
+    background-color: #bfbfbf !important;
+}
+
+.fechar-modal{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 24px;
+    line-height: 1;
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.fechar-modal:hover{
+    background: #f0f0f0;
+    color: #d93025;
+}
+
+.card-entregue{
+    background: #198754;
+    color: white;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.card-entregue h2{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.card-entregue h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card-acoes-entregue{
+    margin-top: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+}
+
+.acoes-entregue{
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.acoes-entregue a{
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-comprar-novamente{
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-avaliar{
+    background: #ffc107;
+    color: #222;
+}
+
+.btn-suporte{
+    background: #e5e7eb;
+    color: #222;
+}
